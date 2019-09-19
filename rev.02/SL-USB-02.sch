@@ -1,0 +1,493 @@
+EESchema Schematic File Version 4
+LIBS:SL-USB-02-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SL-USB-BRIDGE+ESD-protect"
+Date "2019-06-11"
+Rev "0.2"
+Comp "PRUSA research s.r.o"
+Comment1 "http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 "Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+Comment3 "#ok1hra"
+Comment4 ""
+$EndDescr
+$Comp
+L conn:CONN_01X09 P5
+U 1 1 5C927196
+P 6550 3325
+F 0 "P5" H 6400 4000 50  0000 L CNN
+F 1 "70553-0043" H 6400 3900 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x09" H 6550 3325 50  0001 C CNN
+F 3 "" H 6550 3325 50  0001 C CNN
+F 4 "male/C-Grid III/2.54mm/THT" H 6400 3825 28  0000 L CNN "req"
+	1    6550 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2675 6050 2925
+Wire Wire Line
+	6050 2925 6350 2925
+Wire Wire Line
+	5975 2775 5975 3025
+Wire Wire Line
+	5975 3025 6350 3025
+Wire Wire Line
+	5875 2875 5875 3125
+Wire Wire Line
+	5875 3125 6350 3125
+Wire Wire Line
+	5800 2975 5800 3225
+Wire Wire Line
+	5800 3225 6350 3225
+Wire Wire Line
+	6350 3325 5800 3325
+Wire Wire Line
+	5800 3325 5800 4175
+Wire Wire Line
+	5800 4175 5500 4175
+Wire Wire Line
+	5875 3425 6350 3425
+Wire Wire Line
+	5950 3525 6350 3525
+Wire Wire Line
+	6025 4475 6025 3625
+Wire Wire Line
+	6025 3625 6350 3625
+Wire Wire Line
+	6100 4575 6100 4175
+Wire Wire Line
+	6100 3725 6350 3725
+$Comp
+L mechanical:Mounting_Hole_PAD P4
+U 1 1 5C92CE20
+P 6350 4475
+F 0 "P4" H 6428 4516 50  0000 L CNN
+F 1 "CONN_01X01*" H 6428 4425 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6350 4475 50  0001 C CNN
+F 3 "" H 6350 4475 50  0000 C CNN
+	1    6350 4475
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7325 2875 7325 3775
+Wire Notes Line
+	7175 2875 7325 2875
+Wire Notes Line
+	7175 3225 7175 2875
+Wire Notes Line
+	7125 3225 7175 3225
+Wire Notes Line
+	7125 3425 7125 3225
+Wire Notes Line
+	7175 3425 7125 3425
+Wire Notes Line
+	7175 3775 7175 3425
+Wire Notes Line
+	7325 3775 7175 3775
+Text Notes 9525 3300 0    50   ~ 0
+SL-controller
+Wire Notes Line
+	9200 3000 9425 3000
+Wire Notes Line
+	9200 3750 9500 3750
+Wire Notes Line
+	9200 3525 9200 3750
+Wire Notes Line
+	7375 3525 9200 3525
+Wire Notes Line
+	9675 3200 9525 3200
+Wire Notes Line
+	9525 3200 9525 3075
+Wire Notes Line
+	9525 3075 9475 3075
+Wire Notes Line
+	9475 3075 9475 2925
+Wire Notes Line
+	9475 2925 9525 2925
+Wire Notes Line
+	9525 2925 9525 2800
+Wire Notes Line
+	9525 2800 9675 2800
+Wire Notes Line
+	9675 2800 9675 3200
+Wire Notes Line
+	9525 3500 9525 4000
+Wire Notes Line
+	9525 4000 9675 4000
+Wire Notes Line
+	9675 4000 9675 3850
+Wire Notes Line
+	9675 3850 9725 3850
+Wire Notes Line
+	9725 3850 9725 3650
+Wire Notes Line
+	9725 3650 9675 3650
+Wire Notes Line
+	9675 3650 9675 3500
+Wire Notes Line
+	9675 3500 9525 3500
+Text Notes 9525 4100 0    50   ~ 0
+A64
+$Comp
+L SL-USB-02-rescue:Common-mode-choke-ok1hra L1
+U 1 1 5CD962BC
+P 5175 5025
+F 0 "L1" H 5175 5407 50  0000 C CNN
+F 1 "0603USB-601MLB" H 5175 5316 50  0000 C CNN
+F 2 "ok1hra:0603USB-common-mode" H 5125 5025 50  0001 C CNN
+F 3 "" H 5125 5025 50  0001 C CNN
+F 4 ">0.18k @ >3.0GHz/37nH" H 5175 5242 28  0000 C CNN "req"
+	1    5175 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4575 6100 4575
+Connection ~ 6100 4575
+Wire Wire Line
+	6350 4175 6100 4175
+Connection ~ 6100 4175
+Wire Wire Line
+	6100 4175 6100 3725
+Wire Wire Line
+	5875 4925 5525 4925
+Wire Wire Line
+	5875 3425 5875 4925
+Wire Wire Line
+	5950 5075 5525 5075
+Wire Wire Line
+	5950 3525 5950 5075
+Wire Wire Line
+	4825 4925 4675 4925
+Wire Wire Line
+	4675 4925 4675 4275
+Wire Wire Line
+	4575 4375 4575 5075
+Wire Wire Line
+	4575 5075 4825 5075
+$Comp
+L SL-USB-02-rescue:L_Core_Ferrite_Small-device-DLP-control-rescue-DLP-control-04-rescue-DLP-control-05-rescue-SL1-control-05b-rescue-SL-controller-06-rescue-SL-controller-06b-rescue L2
+U 1 1 5CDBC18C
+P 5225 4175
+F 0 "L2" V 5425 4175 50  0000 C CNN
+F 1 "BLM18KG121TN1D" V 5350 4175 28  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 5225 4175 50  0001 C CNN
+F 3 "" H 5225 4175 50  0001 C CNN
+F 4 "120Ω@100MHz/3A" V 5300 4175 28  0000 C CNN "req"
+	1    5225 4175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5125 4175 4950 4175
+$Comp
+L device:C_Small C?
+U 1 1 5CD99AA7
+P 5500 4325
+AR Path="/5CDB90BE/5CD99AA7" Ref="C?"  Part="1" 
+AR Path="/5CD99AA7" Ref="C2"  Part="1" 
+F 0 "C2" H 5600 4425 50  0000 L CNN
+F 1 "100n" H 5600 4325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5500 4325 60  0001 C CNN
+F 3 "" H 5500 4325 60  0000 C CNN
+F 4 "50V/X7R/10%" H 5700 4225 28  0000 C CNN "req"
+	1    5500 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5CD9A1CD
+P 4950 4325
+AR Path="/5CDB90BE/5CD9A1CD" Ref="C?"  Part="1" 
+AR Path="/5CD9A1CD" Ref="C1"  Part="1" 
+F 0 "C1" H 5050 4425 50  0000 L CNN
+F 1 "100n" H 5050 4325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4950 4325 60  0001 C CNN
+F 3 "" H 4950 4325 60  0000 C CNN
+F 4 "50V/X7R/10%" H 5150 4225 28  0000 C CNN "req"
+	1    4950 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4225 4950 4175
+Connection ~ 4950 4175
+Wire Wire Line
+	4950 4425 4950 4475
+Connection ~ 4950 4475
+Wire Wire Line
+	4950 4475 5500 4475
+Wire Wire Line
+	5500 4225 5500 4175
+Connection ~ 5500 4175
+Wire Wire Line
+	5500 4175 5325 4175
+Wire Wire Line
+	5500 4425 5500 4475
+Connection ~ 5500 4475
+Wire Wire Line
+	5500 4475 6025 4475
+Text Notes 6150 2925 0    50   ~ 0
+GND
+Text Notes 6150 3025 0    50   ~ 0
+BUTT
+Text Notes 6150 3125 0    50   ~ 0
+24V
+Text Notes 6150 3225 0    50   ~ 0
+GND
+Text Notes 6150 3325 0    50   ~ 0
++5V
+Text Notes 6150 3425 0    50   ~ 0
+D-
+Text Notes 6150 3525 0    50   ~ 0
+D+
+Text Notes 6150 3625 0    50   ~ 0
+GND
+Text Notes 6150 3725 0    50   ~ 0
+PE?
+$Comp
+L SL-USB-02-rescue:NUP4202-ok1hra U1
+U 1 1 5CD93E19
+P 3375 3675
+F 0 "U1" V 3456 3197 60  0000 R CNN
+F 1 "NUP4202" V 3350 3197 60  0000 R CNN
+F 2 "ok1hra:SC-88" H 3375 3675 60  0001 C CNN
+F 3 "" H 3375 3675 60  0001 C CNN
+F 4 "ESD Suppressors/TVS D LOW CAP DIODE TVS ARRAY" V 3269 3197 28  0000 R CNN "req"
+	1    3375 3675
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3375 3325 3375 3175
+Wire Wire Line
+	3375 3175 2675 3175
+Wire Wire Line
+	2675 3175 2675 4175
+Connection ~ 2675 4175
+Wire Wire Line
+	3125 4025 3125 4275
+Wire Wire Line
+	3625 4025 3625 4375
+Wire Wire Line
+	4675 4275 3125 4275
+Connection ~ 3125 4275
+Wire Wire Line
+	3625 4375 4575 4375
+Connection ~ 3625 4375
+Wire Wire Line
+	4950 4175 2675 4175
+Wire Wire Line
+	3625 3325 3625 2775
+Connection ~ 3625 2775
+Wire Wire Line
+	3625 2775 5975 2775
+NoConn ~ 3125 3325
+$Comp
+L conn:CONN_01X04 P1
+U 1 1 5C923820
+P 1925 2825
+F 0 "P1" H 1842 3190 50  0000 C CNN
+F 1 "PWR-button*" H 1842 3099 50  0000 C CNN
+F 2 "ok1hra:ONPOW-LED-BUTTON" H 1925 2825 50  0001 C CNN
+F 3 "" H 1925 2825 50  0001 C CNN
+F 4 "24V LED" H 1925 2825 50  0001 C CNN "req"
+	1    1925 2825
+	-1   0    0    -1  
+$EndComp
+Text Notes 1575 2775 0    50   ~ 0
+butt
+Wire Notes Line
+	1850 2775 1775 2775
+Wire Notes Line
+	1775 2775 1775 2675
+Wire Notes Line
+	1775 2675 1850 2675
+Text Notes 1575 2975 0    50   ~ 0
+LED
+Text Notes 1800 3000 0    50   ~ 0
+A\nK
+$Comp
+L conn:CONN_01X05 P2
+U 1 1 5C924AA5
+P 1925 4375
+F 0 "P2" H 1842 4846 50  0000 C CNN
+F 1 "USB-A" H 1842 4755 50  0000 C CNN
+F 2 "ok1hra:USB-A-S-VT_ADAM-TECH" H 1925 4375 50  0001 C CNN
+F 3 "" H 1925 4375 50  0001 C CNN
+F 4 "USB-A 2.0/THT/gold" H 1842 4681 28  0000 C CNN "req"
+	1    1925 4375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 2775 3625 2775
+Wire Wire Line
+	2125 4275 3125 4275
+Wire Wire Line
+	2125 4375 3625 4375
+Wire Notes Line
+	1800 4125 1800 4500
+Wire Notes Line
+	1800 4500 1625 4500
+Wire Notes Line
+	1625 4500 1625 4125
+Wire Notes Line
+	1625 4125 1800 4125
+Wire Notes Line
+	1775 4150 1775 4475
+Wire Notes Line
+	1775 4475 1725 4475
+Wire Notes Line
+	1725 4475 1725 4150
+Wire Notes Line
+	1725 4150 1775 4150
+Wire Notes Line
+	1725 4175 1700 4175
+Wire Notes Line
+	1700 4175 1700 4225
+Wire Notes Line
+	1700 4225 1725 4225
+Wire Notes Line
+	1725 4250 1700 4250
+Wire Notes Line
+	1700 4250 1700 4300
+Wire Notes Line
+	1700 4300 1725 4300
+Wire Notes Line
+	1725 4325 1700 4325
+Wire Notes Line
+	1700 4325 1700 4375
+Wire Notes Line
+	1700 4375 1725 4375
+Wire Notes Line
+	1725 4400 1700 4400
+Wire Notes Line
+	1700 4400 1700 4450
+Wire Notes Line
+	1700 4450 1725 4450
+Wire Notes Line
+	1850 4575 1700 4575
+Wire Notes Line
+	1700 4575 1700 4500
+Wire Wire Line
+	2675 4175 2125 4175
+Wire Wire Line
+	2125 4575 3375 4575
+Wire Wire Line
+	2125 2675 6050 2675
+Wire Wire Line
+	2125 4475 4950 4475
+Wire Wire Line
+	3375 4025 3375 4575
+Connection ~ 3375 4575
+Wire Wire Line
+	3375 4575 6100 4575
+$Comp
+L SL-USB-02-rescue:Transil-ok1hra D1
+U 1 1 5CDA2707
+P 5175 3325
+F 0 "D1" V 5101 3424 50  0000 L CNN
+F 1 "SMBJ24A" V 5192 3424 50  0000 L CNN
+F 2 "Diodes_SMD:SMB_Standard" H 5175 3325 50  0001 C CNN
+F 3 "" H 5175 3325 50  0001 C CNN
+F 4 "600W/26,7V/15,4A" V 5266 3424 28  0000 L CNN "req"
+	1    5175 3325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2125 2975 5175 2975
+Wire Wire Line
+	2125 2875 5875 2875
+Wire Wire Line
+	6100 3725 5175 3725
+Wire Wire Line
+	5175 3725 5175 3475
+Connection ~ 6100 3725
+Wire Wire Line
+	5175 3175 5175 2975
+Connection ~ 5175 2975
+Wire Wire Line
+	5175 2975 5800 2975
+$Comp
+L mechanical:Mounting_Hole MK1
+U 1 1 5CFF9C19
+P 7225 6075
+F 0 "MK1" H 7325 6121 50  0000 L CNN
+F 1 "Fiducial" H 7325 6030 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 7225 6075 60  0001 C CNN
+F 3 "" H 7225 6075 60  0001 C CNN
+	1    7225 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical:Mounting_Hole MK2
+U 1 1 5CFFA5C7
+P 7850 6075
+F 0 "MK2" H 7950 6121 50  0000 L CNN
+F 1 "Fiducial" H 7950 6030 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 7850 6075 60  0001 C CNN
+F 3 "" H 7850 6075 60  0001 C CNN
+	1    7850 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical:Mounting_Hole_PAD P3
+U 1 1 5C92C035
+P 6350 4075
+F 0 "P3" H 6428 4116 50  0000 L CNN
+F 1 "CONN_01X01*" H 6428 4025 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6350 4075 50  0001 C CNN
+F 3 "" H 6350 4075 50  0000 C CNN
+	1    6350 4075
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7375 3175 9200 3175
+Wire Notes Line
+	9200 3175 9200 3000
+Text Notes 8125 3375 0    50   ~ 0
+USB cable ID 3627
+$Comp
+L ok1hra:MEC P6
+U 1 1 5CFF925F
+P 7225 2800
+F 0 "P6" H 7293 2871 50  0000 L CNN
+F 1 "50-57-9409*" H 7293 2780 50  0000 L CNN
+F 2 "" H 7225 2800 50  0001 C CNN
+F 3 "" H 7225 2800 50  0001 C CNN
+	1    7225 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L ok1hra:MEC P8
+U 1 1 5CFF979D
+P 9600 3450
+F 0 "P8" H 9725 3550 50  0000 C CNN
+F 1 "50-57-9405*" H 9950 3475 50  0000 C CNN
+F 2 "" H 9600 3450 50  0001 C CNN
+F 3 "" H 9600 3450 50  0001 C CNN
+	1    9600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ok1hra:MEC P7
+U 1 1 5CFFA4B3
+P 9600 2750
+F 0 "P7" H 9725 2850 50  0000 C CNN
+F 1 "50-57-9404*" H 9950 2775 50  0000 C CNN
+F 2 "" H 9600 2750 50  0001 C CNN
+F 3 "" H 9600 2750 50  0001 C CNN
+	1    9600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ok1hra:MEC Q1
+U 1 1 5D0061EC
+P 8550 6075
+F 0 "Q1" H 8618 6146 50  0000 L CNN
+F 1 "QR-code*" H 8618 6055 50  0000 L CNN
+F 2 "ok1hra:QR-code-8x8mm" H 8550 6075 50  0001 C CNN
+F 3 "" H 8550 6075 50  0001 C CNN
+	1    8550 6075
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
